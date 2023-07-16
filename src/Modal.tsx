@@ -1,3 +1,19 @@
+/**
+ * Modal Component.
+ * @param {ReactNode} children - Content of Modal
+ * @param {boolean} className - class you can choos to add to the Modal
+ * @param {string | boolean} modalTitle - Modal title (h2)
+ * @param {boolean} isOpen - If true, the modal is shown on the page
+ * @param {boolean} clicOutsideToClose -If true, you can click on the black overlay to close the modal, it will disable the close (X) buttton
+ * @param {boolean} withButtonClose - If true you, the button will show and you can close the modal with button
+ * @param {string} buttonText - Define text for the modal button
+ * @param {string} buttoncolor - Define color for the modal button
+ * @param {string} closebtncolor - Define color for the close (x) button
+ * @param {string} modaltitlecolor - Define color for lodal title
+ * @param {string} modaltextcolor - define color for modal text
+ * @param {MouseEventHandler<HTMLButtonElement> | MouseEventHandler<HTMLDivElement> | any} onClick - Mouse event click handlers
+ */
+
 import React, { FC, ReactNode, MouseEventHandler } from 'react';
 import styled from 'styled-components';
 
@@ -111,13 +127,16 @@ interface IModal {
   modalTitle?: string | boolean;
   isOpen?: boolean;
   clicOutsideToClose?: boolean;
-  withButton?: boolean;
+  withButtonClose?: boolean;
   buttonText?: string;
   buttoncolor?: string;
   closebtncolor?: string;
   modaltitlecolor?: string;
   modaltextcolor?: string;
-  onClick?: MouseEventHandler<HTMLDivElement> | any;
+  onClick?:
+    | MouseEventHandler<HTMLButtonElement>
+    | MouseEventHandler<HTMLDivElement>
+    | any;
 }
 
 export const Modal: FC<IModal> = ({
@@ -126,7 +145,7 @@ export const Modal: FC<IModal> = ({
   modalTitle,
   isOpen,
   clicOutsideToClose,
-  withButton,
+  withButtonClose,
   buttonText,
   buttoncolor,
   closebtncolor,
@@ -152,16 +171,14 @@ export const Modal: FC<IModal> = ({
               )}
             </>
             <>
-              {!clicOutsideToClose && (
+              {!clicOutsideToClose && !withButtonClose && (
                 <ModalClose onClick={onClick}>
                   <CloseIcon closebtncolor={closebtncolor} />
                 </ModalClose>
               )}
             </>
-
             {children}
-
-            {withButton && (
+            {withButtonClose && (
               <ButtonStyled buttoncolor={buttoncolor} onClick={onClick}>
                 {buttonText}
               </ButtonStyled>
