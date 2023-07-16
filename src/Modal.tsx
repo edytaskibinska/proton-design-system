@@ -134,7 +134,7 @@ export interface IModal {
   closebtncolor?: string;
   modaltitlecolor?: string;
   modaltextcolor?: string;
-  onClick?:
+  onClick:
     | MouseEventHandler<HTMLButtonElement>
     | MouseEventHandler<HTMLDivElement>
     | any;
