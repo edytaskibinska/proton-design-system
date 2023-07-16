@@ -124,6 +124,10 @@ export const ButtonStyled = styled.button<IPropsStyled>`
 //Modal Component declaration :
 export interface IModal {
   children: ReactNode;
+  onClick:
+  | MouseEventHandler<HTMLButtonElement>
+  | MouseEventHandler<HTMLDivElement>
+  | any;
   className?: string;
   modalTitle?: string | boolean;
   isOpen?: boolean;
@@ -134,10 +138,6 @@ export interface IModal {
   closebtncolor?: string;
   modaltitlecolor?: string;
   modaltextcolor?: string;
-  onClick:
-    | MouseEventHandler<HTMLButtonElement>
-    | MouseEventHandler<HTMLDivElement>
-    | any;
 }
 
 export const Modal: FC<IModal> = ({
