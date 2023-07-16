@@ -18,7 +18,7 @@ import React, { FC, ReactNode, MouseEventHandler } from 'react';
 import styled from 'styled-components';
 
 //Modal Title declarations :
-interface IPropsStyled {
+export interface IPropsStyled {
   modaltextcolor?: string;
   buttoncolor?: string;
   modaltitlecolor?: string;
@@ -26,13 +26,13 @@ interface IPropsStyled {
 }
 
 //Modal close Icon declarations :
-const IconSvg = styled.svg<IPropsStyled>`
+export const IconSvg = styled.svg<IPropsStyled>`
   max-width: 27px;
   max-height: 27px;
   fill: ${(props: IPropsStyled) => props.closebtncolor || 'black'};
 `;
 
-const CloseIcon: FC<IPropsStyled> = ({ closebtncolor }) => {
+export const CloseIcon: FC<IPropsStyled> = ({ closebtncolor }) => {
   return (
     <IconSvg
       height="512px"
@@ -49,8 +49,9 @@ const CloseIcon: FC<IPropsStyled> = ({ closebtncolor }) => {
     </IconSvg>
   );
 };
+
 //Modal Parent container declarations :
-const ModalContainer = styled.div<IPropsStyled>`
+export const ModalContainer = styled.div<IPropsStyled>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +64,7 @@ const ModalContainer = styled.div<IPropsStyled>`
 `;
 
 //Modal Overlay declarations :
-const ModalOverlay = styled.div<IPropsStyled>`
+export const ModalOverlay = styled.div<IPropsStyled>`
   width: 100%;
   padding: 8px;
   position: fixed;
@@ -75,7 +76,7 @@ const ModalOverlay = styled.div<IPropsStyled>`
 `;
 
 //Modal Block declarations :
-const ModalBlock = styled.div<IPropsStyled>`
+export const ModalBlock = styled.div<IPropsStyled>`
   background-color: white;
   color: ${(props: IPropsStyled) => props.modaltextcolor || 'black'};
   max-width: 400px;
@@ -86,13 +87,13 @@ const ModalBlock = styled.div<IPropsStyled>`
 `;
 
 //Modal Title declarations :
-const ModalTitle = styled.h2<IPropsStyled>`
+export const ModalTitle = styled.h2<IPropsStyled>`
   margin-bottom: 20px;
   color: ${(props: IPropsStyled) => props.modaltitlecolor || 'black'};
 `;
 
 //Modal Close button declarations :
-const ModalClose = styled.button<IPropsStyled>`
+export const ModalClose = styled.button<IPropsStyled>`
   background-color: transparent;
   width: 24px;
   height: 20px;
@@ -106,7 +107,7 @@ const ModalClose = styled.button<IPropsStyled>`
 `;
 
 //Modal Push declarations :
-const ButtonStyled = styled.button<IPropsStyled>`
+export const ButtonStyled = styled.button<IPropsStyled>`
   display: block;
   width: 100%;
   padding: 8px;
@@ -121,8 +122,8 @@ const ButtonStyled = styled.button<IPropsStyled>`
 `;
 
 //Modal Component declaration :
-interface IModal {
-  children?: ReactNode;
+export interface IModal {
+  children: ReactNode;
   className?: string;
   modalTitle?: string | boolean;
   isOpen?: boolean;
