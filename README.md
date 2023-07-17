@@ -20,7 +20,7 @@ https://www.npmjs.com/package/@e-skibinska/proton-design-system
 https://edytaskibinska.github.io/proton-design-modal-doc/
 
 # Codesandbox demo :
-https://codesandbox.io/p/sandbox/romantic-mayer-882dtf
+https://codesandbox.io/p/sandbox/proton-design-modal-882dtf?file=%2Fsrc%2FApp.tsx%3A63%2C10
 
 # Commands :
 
