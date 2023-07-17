@@ -1,5 +1,5 @@
 {
-  "version": "1.2.4",
+  "version": "1.2.5",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -34,7 +34,7 @@
     "trailingComma": "es5"
   },
   "name": "@e-skibinska/proton-design-system",
-  "author": "edytaskibinska",
+  "author": "Edyta Skibinska",
   "module": "dist/proton-design-system.esm.js",
   "size-limit": [
     {
