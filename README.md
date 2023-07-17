@@ -29,10 +29,6 @@ npx typedoc --out docs src/main.tsx
 
 Interface IModal
 
-Hierarchy :
-
-IModal
-
 Defined in src/Modal.tsx:125
 
 Properties:
