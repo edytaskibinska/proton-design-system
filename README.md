@@ -23,6 +23,11 @@ https://www.npmjs.com/package/@e-skibinska/proton-design-system
 
 npx typedoc --out docs src/main.tsx
 
+# Codesandbox demo :
+
+https://codesandbox.io/p/sandbox/romantic-mayer-882dtf
+
+
 # Doc :
 
 # @e-skibinska/proton-design-systemIModal
