@@ -1,0 +1,21 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  body {
+    background-color: white;
+  }
+  .button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    background-color: #9a0680;
+    color: white;
+    transition-duration: 0.25s;
+    border: none;
+  }
