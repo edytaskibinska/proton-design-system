@@ -61,6 +61,7 @@ export const ModalContainer = styled.div<IPropsStyled>`
   bottom: 0px;
   left: 0px;
   right: 0px;
+  z-index: 999;
 `;
 
 //Modal Overlay declarations :
