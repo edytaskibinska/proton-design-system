@@ -27,3 +27,7 @@ https://codesandbox.io/p/sandbox/proton-design-modal-882dtf?file=%2Fsrc%2FApp.ts
 ## CLI to generate documentation
 
 npx typedoc --out docs src/main.tsx
+
+## CLI to publish 
+
+npm publish --access public
