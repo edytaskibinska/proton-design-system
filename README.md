@@ -34,10 +34,12 @@ Basic modal :
     aliquip ex ea commodo consequat.
 </Modal>
 
-```
+
+````
 Modal with title :
 
-```
+
+````
 <Button
     onClick={(e) => {
     e.preventDefault();
@@ -61,10 +63,12 @@ Modal with title :
     nisi ut <br />
     aliquip ex ea commodo consequat.
 </Modal>
-```
+
+````
 Modal with Title and button:
 
-```
+
+````
 <Button
     onClick={(e) => {
     e.preventDefault();
@@ -91,10 +95,12 @@ Modal with Title and button:
     nisi ut <br />
     aliquip ex ea commodo consequat.
 </Modal>
-```
+
+````
 Modal closed when click outside:
 
-```
+
+````
 <Button
     onClick={(e) => {
     e.preventDefault();
@@ -120,10 +126,12 @@ Modal closed when click outside:
     nisi ut <br />
     aliquip ex ea commodo consequat.
 </Modal>
-```
+
+````
 Modal with Styled Elements
 
-```
+
+````
 <Button
     onClick={(e) => {
     e.preventDefault();
@@ -152,6 +160,7 @@ Modal with Styled Elements
     nisi ut <br />
     aliquip ex ea commodo consequat.
 </Modal>
+
 
 ````
 
