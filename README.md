@@ -1,17 +1,52 @@
-# Tech Stack :
+# About The Project
 
+The Proton Design System components architecture is based on S.O.L.I.D principles abstracted to use them in modern React based applications.
+It's a set of reusable React Typescript components easy to use and custom.
+
+# Built With
+- Vite 4.4.0
 - React 18.2.0
-- Typescript 5.1.6
+- Typescript 5.0.2
 
 # Dependencies:
-
 - styled-components 6.0.4
 
-# Architecture:
+# Installation:
+In your React root application run 
+```
+npm install
+```
 
-The Proton Design System components architecture is based on S.O.L.I.D principles abstracted to use them in modern React Typescript application.
+To have tha last version of packages please run:
+```
+npm update
+```
 
-# Use examples:
+Install Proton Design System modules:
+```
+npm i @e-skibinska/proton-design-system
+```
+
+Import modules into your app, example : 
+```
+import { Modal } from "@e-skibinska/proton-design-system";
+
+```
+
+Then implement : 
+```
+<Modal onClick={() => setModal(false)} isOpen={modal} className="modal">
+    My modal text.
+</Modal>
+```
+
+If needed you can run the tpescript checker : 
+```
+tsc
+```
+
+
+# Usage :
 
 Basic modal :
 
