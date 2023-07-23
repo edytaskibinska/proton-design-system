@@ -4,7 +4,6 @@ The Proton Design System components architecture is based on S.O.L.I.D principle
 It's a set of reusable React Typescript components easy to use and custom.
 
 # Built With
-- Vite 4.4.0
 - React 18.2.0
 - Typescript 5.0.2
 
