@@ -198,6 +198,7 @@ Modal with Styled Elements
 
 ````
 
+# Useful links:
 ## Codesandbox demo :
 
 https://codesandbox.io/p/sandbox/proton-design-modal-882dtf?file=%2Fsrc%2FApp.tsx%3A63%2C10
@@ -206,41 +207,18 @@ https://codesandbox.io/p/sandbox/proton-design-modal-882dtf?file=%2Fsrc%2FApp.ts
 
 https://www.npmjs.com/package/@e-skibinska/proton-design-system
 
-# The documentation of the Proton Design System Modal :
+## The documentation of the Proton Design System Modal :
 
 https://edytaskibinska.github.io/proton-design-modal-doc/
 
-# Codesandbox demo :
 
-https://codesandbox.io/p/sandbox/proton-design-modal-882dtf?file=%2Fsrc%2FApp.tsx%3A63%2C10
 
-## Cli commands for project:
 
-Make sure that you have the last version of Proton Design System modules:
 
-```
-npm i @e-skibinska/proton-design-system
-```
 
-Development :
 
-```
-npm run dev
-```
 
-Build :
-
-```
-npm run build
-```
-
-Typescript check CLI :
-
-```
-tsc
-```
-
-## CLI to generate documentation
+##### CLI to generate documentation
 
 ```
 npx typedoc --out docs src/main.tsx
